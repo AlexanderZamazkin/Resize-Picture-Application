@@ -1,0 +1,63 @@
+    .page-footer__wrapper {
+        width: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: @small-font;
+        background-image: url('../img/page-main/index-icon-3.svg');
+        
+        @media (min-width: @tablet-width) {
+            flex-direction: row;
+        }
+
+        @media (min-width: @desktop-width) {
+            width: 1440px;
+        }
+    }
+
+    .footer-link {
+        display: flex;
+        font-size: @small-font;
+        margin-left: 40px;
+        
+        @media (min-width: @desktop-width) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .page-footer__text {
+        color: @light-blue;
+        margin: 0px;
+        margin-top: 10px;
+
+        @media (min-width: @desktop-width) {
+            font-size: @medium-font;
+            margin-top: 15px;
+        }
+    }
+
+    .page-footer__phone-link {
+        @media (min-width: @tablet-width) {
+            margin-left: auto;
+            margin-right: 40px;
+        }
+
+        @media (min-width: @desktop-width) {
+            font-size: @medium-font;
+        }
+    }
+
+    .page-footer__mail-icon {
+        @media (min-width: @desktop-width) {
+            width: 50px;
+            height: 46px;
+        }
+    }
+
+    .page-footer__phone-icon {
+        @media (min-width: @desktop-width) {
+            width: 50px;
+            height: 50px;
+        }
+    }

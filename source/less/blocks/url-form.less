@@ -1,0 +1,68 @@
+
+.first-screen__url-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (min-width: @tablet-width) {
+        width: 210px;
+        margin-left: 85px;
+    }
+}
+
+.url-form__input {
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    position: relative;
+    width: 190px;
+    padding: 5px;
+    box-shadow: inset 4.09px 8.18px 16.36px #bdbdbd80, inset 2px 2px 4px #b7b7b766, inset -2px -2px 4px #c4c4c466;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.17) 0%, rgb(222.06, 222.06, 222.06) 100%);
+    border: none;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: @tiny-font;
+    line-height: normal;
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media (min-width: @tablet-width) {
+        width: 200px;
+        padding: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+        font-size: @medium-font;
+        width: 320px;
+        padding: 15px;
+    }
+    
+  
+}
+
+.url-form__load-button {
+    padding: 5px;
+    margin-right: 10px;
+
+    @media (min-width: @tablet-width) {
+        width: 100px;
+        padding: 10px;
+        margin-right: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 140px;
+        margin-right: 70px;
+    }
+}
+
+.url-form__clean-button {
+    @media (min-width: @tablet-width) {
+        width: 100px;
+        padding: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 140px;
+    }
+}

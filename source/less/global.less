@@ -1,0 +1,61 @@
+
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: @medium-font;
+    line-height: 18px;
+    font-weight: 400;
+    background-color: @main-color;
+    margin: 0 auto;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .button {
+    color: @main-color;
+    background-color: @light-blue;
+    border: none; 
+    @media (min-width: @desktop-width) {
+      font-size: @medium-font;
+      width: 140px;
+    }
+
+  }
+
+  .title {
+    color: @light-blue;
+    font-size: @small-font;
+    text-align: center;
+  }
+
+  .input {
+    font-size: 16px;
+    font-family: "Roboto-Regular", Helvetica;
+    line-height: normal;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid;
+    border-color: @dark-blue;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.17) 0%, rgb(222.06, 222.06, 222.06) 100%);
+    @media (min-width: @desktop-width) {
+      font-size: @medium-font;
+      width: 230px;
+    }
+}
+
+.page-tools{
+  position: relative;
+}

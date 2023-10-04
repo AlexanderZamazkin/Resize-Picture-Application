@@ -1,0 +1,112 @@
+
+.first-screen__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    font-size: @tiny-font;
+    margin: auto;
+    margin-bottom: 20px;
+
+
+    @media (min-width: @tablet-width) {
+      width: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+    }
+  
+    @media (min-width: @desktop-width) {
+      width: 1440px;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .first-screen__background {
+    background-image: url('../img/page-main/first-screen-background.svg');
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      background-image: url('../img/page-main/first-screen-background-2.svg');
+      width: 370px;
+      margin-top: 0px;
+      margin-left: auto;
+    }
+    @media (min-width: @desktop-width) {
+      background-image: url('../img/page-main/first-screen-background-3.svg');
+      width: 960px;
+    }
+  }
+
+  .first-screen__title {
+    width: 205px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+
+    @media (min-width: @tablet-width) {
+    
+      width: 370px;
+      font-size: @medium-font;
+      line-height: normal;
+      padding: 22px;
+    }
+  
+    @media (min-width: @desktop-width) {
+      width: 746px;
+      font-size: @giant-font;
+    }
+    
+  
+  }
+
+  .first-screen__image {
+    width: 200px;
+    margin-left:0px;
+    align-self: end;
+
+    @media (min-width: @tablet-width) {
+      margin-left: auto;
+        width: 280px;
+
+    }
+  
+    @media (min-width: @desktop-width) {
+      width: 480px;
+      height: 342px;
+    }
+  }
+  
+  .first-screen__text {
+    line-height: normal;
+    font-size: 8px;
+    text-align: center;
+    width: 80px;
+    position: absolute;
+    top: 160px;
+    right: 50px;
+
+
+    @media (min-width: @tablet-width) {
+      top: 85px;
+      right: 80px;
+    }
+  
+    @media (min-width: @desktop-width) {
+      width: 160px;
+      font-size: @tiny-font;
+      top: 143px;
+      right: 130px;
+    }
+
+
+  }
+  
+  

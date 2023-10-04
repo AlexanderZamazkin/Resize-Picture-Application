@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="icon" type="image/x-icon" href="source/img/page-main/favicon.ico">
+    <title>Редактор картинок</title>
+</head>
+<body class="page__body">
+    <main class="page-tools">
+        <section class="first-screen">
+            <div class="first-screen__wrapper">
+                <div class="first-screen__background">
+                    <h1 class="first-screen__title title"> Быстрый способ изменить размер вашей картинки </h1>
+                </div>  
+                <img class="first-screen__image" src="source/img/page-main/index-image-1.png" title="Логотип изменения размера картинки">
+                <p class="first-screen__text">created by Alexander Zamazkin</p>
+                <div class="first-screen__choose-button">
+                    <input class="visually-hidden" name="file" type="file" id="choose-file">
+                    <label for="choose-file" class="choose-button__input button">
+                        <span class="choose-button__text">Выберите файл</span>
+                    </label>
+                    <p class="choose-button_additional-text">или просто перетащите его сюда</p>
+                </div>
+                <div class="first-screen__url-form">
+                    <input class="url-form__input" type="text" id="input-url" placeholder="Введите URL изображения" >
+                    <button class="url-form__load-button button" type="button" id="load-button" >Загрузить</button>
+                    <button class="url-form__clean-button button" type="reset" id="clean-button" >Очистить</button>
+                </div>
+            </div>
+        </section>
+        <section class="size-change">
+            <div class="size-change__wrapper">
+                <img class="size-change__original-picture" id="original-picture" width="1136" height="640" alt="">
+                <canvas class="size-change__edited-picture visually-hidden" src="" id="edited-picture" width="1000" height="500"></canvas>
+                <div class="size-change__form">
+                    <h2 class="size-change__title title">Параметры изменения <br/>размера</h2>
+                    <input class="size-change__input-width input" type="text" id="width-parametrs" placeholder="Введите ширину">  
+                    <input class="size-change__input-height input" type="text" id="height-parametrs" placeholder="Введите высоту">
+                    <button class="size-change__edit-button button" type="button" id="edit-button">Редактировать</button>
+                    <button class="size-change__save-button button" type="button" id="save-button">Сохранить результат</button>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="page-footer__wrapper">
+                <a class="page-footer__mail-link footer-link">
+                    <img class="page-footer__mail-icon" src="source/img/page-main/index-image-2.png" width="40" height="36" title="mail-адрес">
+                    <p class="page-footer__text">Alex_zam_2000@mail.ru</p>
+                </a>
+                <a class="page-footer__phone-link footer-link">
+                    <img class="page-footer__phone-icon" src="source/img/page-main/index-image-3.png" width="40" height="40" title="телефон">
+                    <p class="page-footer__text">+7(929)659-10-60</p>
+                </a>
+            </div>
+        </footer>  
+        <div class="page-drop" draggable="false">
+            Просто перетащите файл в эту область
+        </div>
+        <div class="error-form__wrapper">
+            <div class="error-form__wrapper-container" >
+                <p class="error-form__text error-form__empty">Введите url-адрес</p>
+                <p class="error-form__text error-form__incorrect">Некорректный url-адрес!</p>
+                <p class="error-form__text error-form__load-image">Загрузите картинку!</p>
+                <p class="error-form__text error-form__input-parametrs">Введите значения!</p>
+                <button class="error-form__button button" type="button">ок</button>
+            </div>
+        </div> 
+    </main>
+    <script src="render.js"></script>
+</body>
+</html>
+
+
+
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+  
+

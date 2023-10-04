@@ -1,0 +1,47 @@
+{
+  
+  "name": "my-electron-app",
+  
+  "version": "1.0.0",
+  
+  "description": "",
+  
+  "main": "index.js",
+  
+  "scripts": {
+  
+    
+  "start": "electron .",
+  
+    
+  "start:nodemon": "nodemon --watch main.js --exec npm start",
+  
+    
+  "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  
+  },
+  
+  "author": "",
+  
+  "license": "ISC",
+  
+  "devDependencies": {
+  
+    
+  "electron": "^26.2.0"
+  
+  },
+  
+  "dependencies": {
+  
+    
+  "bootstrap": "^5.3.1",
+  
+    
+  "canvas_image_processing": "^0.0.5",
+  
+    
+  "nodemon": "^3.0.1"
+  
+  }
+}
